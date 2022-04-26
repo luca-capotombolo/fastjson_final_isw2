@@ -1,5 +1,6 @@
 package org.capotombolo;
 
+import com.alibaba.fastjson.parser.Feature;
 import junit.framework.TestCase;
 import org.junit.Assert;
 
@@ -15,15 +16,27 @@ import java.lang.reflect.Method;
 import java.math.BigDecimal;
 import java.math.BigInteger;
 import java.sql.Timestamp;
-import java.util.ArrayList;
-import java.util.Calendar;
-import java.util.Date;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-import java.util.TimeZone;
+import java.util.*;
 
 @RunWith(Parameterized.class)
 public class TestTypeUtilsParameterized extends TestCase{
+
+    private final HashMap map;
+    //private final Class<?> aClass;
+
+    @Parameterized.Parameters
+    public static Collection<Object[]> setParameters(){
+        return Arrays.asList(new Object[][]{
+                });
+    }
+
+    public TestTypeUtilsParameterized(HashMap map){
+        this.map = map;
+    }
+
+    public void test_0() throws Exception {
+
+
+    }
 
 }
