@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f8b9ad1d-4dcc-4312-98a8-e7203a9ad0fe" name="Changes" comment="Ho tolto i test che non vanno a buon fine">
-      <change afterPath="$PROJECT_DIR$/.github/workflows/sonar.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    <list default="true" id="f8b9ad1d-4dcc-4312-98a8-e7203a9ad0fe" name="Changes" comment="Modifica del pom e aggiunta di sonar.yml per aggiungere al workflow sonarcloud">
+      <change beforePath="$PROJECT_DIR$/.github/workflows/sonar.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/sonar.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -131,7 +129,14 @@
       <option name="project" value="LOCAL" />
       <updated>1650986494173</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Modifica del pom e aggiunta di sonar.yml per aggiungere al workflow sonarcloud">
+      <created>1650987322621</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1650987322621</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -152,6 +157,7 @@
     <MESSAGE value="Ho aggiunto build.yml per sonarcloud" />
     <MESSAGE value="Ho modificato il build.yml per automatizzare il CI" />
     <MESSAGE value="Ho tolto i test che non vanno a buon fine" />
-    <option name="LAST_COMMIT_MESSAGE" value="Ho tolto i test che non vanno a buon fine" />
+    <MESSAGE value="Modifica del pom e aggiunta di sonar.yml per aggiungere al workflow sonarcloud" />
+    <option name="LAST_COMMIT_MESSAGE" value="Modifica del pom e aggiunta di sonar.yml per aggiungere al workflow sonarcloud" />
   </component>
 </project>
