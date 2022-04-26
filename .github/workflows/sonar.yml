@@ -1,0 +1,12 @@
+on: push
+name: Sonar Workflow
+jobs:
+  build:
+    name: Build, Test and Analyze
+    runs-on: ubuntu-latest
+    steps:
+      - name: Analyze with SonarCloud
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+        run: mvn -B verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar -Dsonar.projectKey=luca-capotombolo_fastjson_final_isw2
