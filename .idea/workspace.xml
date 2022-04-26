@@ -4,10 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f8b9ad1d-4dcc-4312-98a8-e7203a9ad0fe" name="Changes" comment="Aggiunta dipendenza fastjson nel pom.xml">
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/TestOrderedFiledParameterized.java" afterDir="false" />
+    <list default="true" id="f8b9ad1d-4dcc-4312-98a8-e7203a9ad0fe" name="Changes" comment="Modificato la classe TestOrderedFiledParameterized.java">
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/capotombolo/TestTypeUtilsParameterized.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/AppTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/AppTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/capotombolo/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/AppTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/capotombolo/AppTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/TestOrderedFiledParameterized.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/capotombolo/TestOrderedFiledParameterized.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,17 +43,17 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.repository.indices&quot;
   }
 }</component>
-  <component name="RunManager" selected="JUnit.TestOrderedFiledParameterized.test_ordered_field">
+  <component name="RunManager" selected="JUnit.TestOrderedFiledParameterized">
     <configuration name="TestOrderedFiledParameterized" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="myfastjson_isw2_final" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.example.*" />
+          <option name="PATTERN" value="org.capotombolo.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="org.example" />
-      <option name="MAIN_CLASS_NAME" value="org.example.TestOrderedFiledParameterized" />
+      <option name="MAIN_CLASS_NAME" value="org.capotombolo.TestOrderedFiledParameterized" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -61,12 +63,12 @@
       <module name="myfastjson_isw2_final" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.example.*" />
+          <option name="PATTERN" value="org.capotombolo.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="org.example" />
-      <option name="MAIN_CLASS_NAME" value="org.example.TestOrderedFiledParameterized" />
+      <option name="MAIN_CLASS_NAME" value="org.capotombolo.TestOrderedFiledParameterized" />
       <option name="METHOD_NAME" value="test_ordered_field" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -75,8 +77,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.TestOrderedFiledParameterized.test_ordered_field" />
         <item itemvalue="JUnit.TestOrderedFiledParameterized" />
+        <item itemvalue="JUnit.TestOrderedFiledParameterized.test_ordered_field" />
       </list>
     </recent_temporary>
   </component>
@@ -96,7 +98,14 @@
       <option name="project" value="LOCAL" />
       <updated>1650459297864</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Modificato la classe TestOrderedFiledParameterized.java">
+      <created>1650460627345</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1650460627345</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -112,6 +121,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Aggiunta dipendenza fastjson nel pom.xml" />
-    <option name="LAST_COMMIT_MESSAGE" value="Aggiunta dipendenza fastjson nel pom.xml" />
+    <MESSAGE value="Modificato la classe TestOrderedFiledParameterized.java" />
+    <option name="LAST_COMMIT_MESSAGE" value="Modificato la classe TestOrderedFiledParameterized.java" />
   </component>
 </project>
