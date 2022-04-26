@@ -52,8 +52,8 @@ public class TestOrderedFiledParameterized {
         return Arrays.asList(new Object[][]{
                 {"{\"id\":1001,}", Model.class, Feature.OrderedField, 1001, "{\"id\":1001}"},       //actual = expected
                 {"{\"id\":1004}", Model.class, Feature.OrderedField, 1004, "{\"id\":1004}"},        //actual = expected
-                {"{\"id\":1004}", Model.class, Feature.OrderedField, 1004, "{\"id\":1011}"},        //actual != expected
-                {"{\"id\":1001,}", Model.class, Feature.OrderedField, 1, "{\"id\":1001}"},          //actual != expected
+                //{"{\"id\":1004}", Model.class, Feature.OrderedField, 1004, "{\"id\":1011}"},        //actual != expected
+                //{"{\"id\":1001,}", Model.class, Feature.OrderedField, 1, "{\"id\":1001}"},          //actual != expected
         });
     }
 
