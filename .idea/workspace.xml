@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f8b9ad1d-4dcc-4312-98a8-e7203a9ad0fe" name="Changes" comment="Ho rimosso App.java, modificato TestOrderedFiledParameterized e aggiunto il file TestTypeUtilsParameterized.java">
-      <change afterPath="$PROJECT_DIR$/.github/workflows/build.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sonar-project.properties" afterDir="false" />
+    <list default="true" id="f8b9ad1d-4dcc-4312-98a8-e7203a9ad0fe" name="Changes" comment="Ho aggiunto build.yml per sonarcloud">
+      <change beforePath="$PROJECT_DIR$/.github/workflows/build.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/build.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/capotombolo/TestTypeUtilsParameterized.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/capotombolo/TestTypeUtilsParameterized.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -111,7 +109,14 @@
       <option name="project" value="LOCAL" />
       <updated>1650962459811</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Ho aggiunto build.yml per sonarcloud">
+      <created>1650985018656</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1650985018656</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -129,6 +134,7 @@
     <MESSAGE value="Aggiunta dipendenza fastjson nel pom.xml" />
     <MESSAGE value="Modificato la classe TestOrderedFiledParameterized.java" />
     <MESSAGE value="Ho rimosso App.java, modificato TestOrderedFiledParameterized e aggiunto il file TestTypeUtilsParameterized.java" />
-    <option name="LAST_COMMIT_MESSAGE" value="Ho rimosso App.java, modificato TestOrderedFiledParameterized e aggiunto il file TestTypeUtilsParameterized.java" />
+    <MESSAGE value="Ho aggiunto build.yml per sonarcloud" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ho aggiunto build.yml per sonarcloud" />
   </component>
 </project>
