@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f8b9ad1d-4dcc-4312-98a8-e7203a9ad0fe" name="Changes" comment="Modificato sonar.yml">
+    <list default="true" id="f8b9ad1d-4dcc-4312-98a8-e7203a9ad0fe" name="Changes" comment="Modificato su sonar cloud automatic analysis">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/org/capotombolo/TestOrderedFiledParameterized.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/capotombolo/TestOrderedFiledParameterized.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/capotombolo/TestTypeUtilsParameterized.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/capotombolo/TestTypeUtilsParameterized.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,22 +41,7 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.repository.indices&quot;
   }
 }</component>
-  <component name="RunManager" selected="JUnit.TestOrderedFiledParameterized">
-    <configuration name="TestOrderedFiledParameterized" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="myfastjson_isw2_final" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.capotombolo.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.example" />
-      <option name="MAIN_CLASS_NAME" value="org.capotombolo.TestOrderedFiledParameterized" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.TestTypeUtilsParametrizedAll">
     <configuration name="TestOrderedFiledParameterized.test_ordered_field" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="myfastjson_isw2_final" />
       <extension name="coverage">
@@ -71,10 +58,75 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TestTypeUtilsParameterized" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="myfastjson_isw2_final" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.capotombolo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.capotombolo" />
+      <option name="MAIN_CLASS_NAME" value="org.capotombolo.TestTypeUtilsParameterized" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestTypeUtilsParameterized.t" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="myfastjson_isw2_final" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.capotombolo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.capotombolo" />
+      <option name="MAIN_CLASS_NAME" value="org.capotombolo.TestTypeUtilsParameterized" />
+      <option name="METHOD_NAME" value="t" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestTypeUtilsParametrizedAll" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="myfastjson_isw2_final" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.capotombolo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.capotombolo" />
+      <option name="MAIN_CLASS_NAME" value="org.capotombolo.TestTypeUtilsParametrizedAll" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestTypeUtilsParametrizedAll.test_0_1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="myfastjson_isw2_final" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.capotombolo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.capotombolo" />
+      <option name="MAIN_CLASS_NAME" value="org.capotombolo.TestTypeUtilsParametrizedAll" />
+      <option name="METHOD_NAME" value="test_0_1" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.TestOrderedFiledParameterized" />
+        <item itemvalue="JUnit.TestTypeUtilsParametrizedAll" />
+        <item itemvalue="JUnit.TestTypeUtilsParametrizedAll.test_0_1" />
         <item itemvalue="JUnit.TestOrderedFiledParameterized.test_ordered_field" />
+        <item itemvalue="JUnit.TestTypeUtilsParameterized" />
+        <item itemvalue="JUnit.TestTypeUtilsParameterized.t" />
       </list>
     </recent_temporary>
   </component>
@@ -143,7 +195,14 @@
       <option name="project" value="LOCAL" />
       <updated>1650987966072</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Modificato su sonar cloud automatic analysis">
+      <created>1650988137076</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1650988137076</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -166,6 +225,7 @@
     <MESSAGE value="Ho tolto i test che non vanno a buon fine" />
     <MESSAGE value="Modifica del pom e aggiunta di sonar.yml per aggiungere al workflow sonarcloud" />
     <MESSAGE value="Modificato sonar.yml" />
-    <option name="LAST_COMMIT_MESSAGE" value="Modificato sonar.yml" />
+    <MESSAGE value="Modificato su sonar cloud automatic analysis" />
+    <option name="LAST_COMMIT_MESSAGE" value="Modificato su sonar cloud automatic analysis" />
   </component>
 </project>
