@@ -4,10 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f8b9ad1d-4dcc-4312-98a8-e7203a9ad0fe" name="Changes" comment="Modificato su sonar cloud automatic analysis">
+    <list default="true" id="f8b9ad1d-4dcc-4312-98a8-e7203a9ad0fe" name="Changes" comment="Aggiunto il file TestTypeUtilsParametrizedAll.java che contiene l'impplementazione dei test in modo che ne vengano eseguiti uno alla volta">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/capotombolo/TestOrderedFiledParameterized.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/capotombolo/TestOrderedFiledParameterized.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/capotombolo/TestTypeUtilsParameterized.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/capotombolo/TestTypeUtilsParameterized.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/capotombolo/TestOrderedFiledParameterized.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/capotombolo/TestOrderedFieldParameterized.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/capotombolo/TestTypeUtilsParameterized.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/capotombolo/TestTypeUtilsParametrizedAll.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,14 +37,26 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.41379312&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.repository.indices&quot;
   }
 }</component>
-  <component name="RunManager" selected="JUnit.TestTypeUtilsParametrizedAll">
-    <configuration name="TestOrderedFiledParameterized.test_ordered_field" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\lucac\MyJava\myfastjson_isw2_final\src\test\java\org\capotombolo" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.TestTypeUtilsParameterized">
+    <configuration name="TestOrderedFieldParameterized" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="myfastjson_isw2_final" />
       <extension name="coverage">
         <pattern>
@@ -50,9 +64,40 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="org.example" />
-      <option name="MAIN_CLASS_NAME" value="org.capotombolo.TestOrderedFiledParameterized" />
+      <option name="PACKAGE_NAME" value="org.capotombolo" />
+      <option name="MAIN_CLASS_NAME" value="org.capotombolo.TestOrderedFieldParameterized" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestOrderedFieldParameterized.test_ordered_field" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="myfastjson_isw2_final" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.capotombolo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.capotombolo" />
+      <option name="MAIN_CLASS_NAME" value="org.capotombolo.TestOrderedFieldParameterized" />
       <option name="METHOD_NAME" value="test_ordered_field" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestOrderedFieldParameterized.test_ordered_field_assert_gson" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="myfastjson_isw2_final" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.capotombolo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.capotombolo" />
+      <option name="MAIN_CLASS_NAME" value="org.capotombolo.TestOrderedFieldParameterized" />
+      <option name="METHOD_NAME" value="test_ordered_field_assert_gson" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -73,22 +118,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestTypeUtilsParameterized.t" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="myfastjson_isw2_final" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.capotombolo.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.capotombolo" />
-      <option name="MAIN_CLASS_NAME" value="org.capotombolo.TestTypeUtilsParameterized" />
-      <option name="METHOD_NAME" value="t" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="TestTypeUtilsParametrizedAll" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="myfastjson_isw2_final" />
       <extension name="coverage">
@@ -104,29 +133,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestTypeUtilsParametrizedAll.test_0_1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="myfastjson_isw2_final" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.capotombolo.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.capotombolo" />
-      <option name="MAIN_CLASS_NAME" value="org.capotombolo.TestTypeUtilsParametrizedAll" />
-      <option name="METHOD_NAME" value="test_0_1" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.TestTypeUtilsParametrizedAll" />
-        <item itemvalue="JUnit.TestTypeUtilsParametrizedAll.test_0_1" />
-        <item itemvalue="JUnit.TestOrderedFiledParameterized.test_ordered_field" />
         <item itemvalue="JUnit.TestTypeUtilsParameterized" />
-        <item itemvalue="JUnit.TestTypeUtilsParameterized.t" />
+        <item itemvalue="JUnit.TestOrderedFieldParameterized" />
+        <item itemvalue="JUnit.TestOrderedFieldParameterized.test_ordered_field_assert_gson" />
+        <item itemvalue="JUnit.TestOrderedFieldParameterized.test_ordered_field" />
+        <item itemvalue="JUnit.TestTypeUtilsParametrizedAll" />
       </list>
     </recent_temporary>
   </component>
@@ -202,7 +215,21 @@
       <option name="project" value="LOCAL" />
       <updated>1650988137076</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Implementato i test sia per l'esecuzione di tutti i test sia per un test alla volta">
+      <created>1651598187166</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1651598187166</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Aggiunto il file TestTypeUtilsParametrizedAll.java che contiene l'impplementazione dei test in modo che ne vengano eseguiti uno alla volta">
+      <created>1651598504866</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1651598504866</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -226,6 +253,8 @@
     <MESSAGE value="Modifica del pom e aggiunta di sonar.yml per aggiungere al workflow sonarcloud" />
     <MESSAGE value="Modificato sonar.yml" />
     <MESSAGE value="Modificato su sonar cloud automatic analysis" />
-    <option name="LAST_COMMIT_MESSAGE" value="Modificato su sonar cloud automatic analysis" />
+    <MESSAGE value="Implementato i test sia per l'esecuzione di tutti i test sia per un test alla volta" />
+    <MESSAGE value="Aggiunto il file TestTypeUtilsParametrizedAll.java che contiene l'impplementazione dei test in modo che ne vengano eseguiti uno alla volta" />
+    <option name="LAST_COMMIT_MESSAGE" value="Aggiunto il file TestTypeUtilsParametrizedAll.java che contiene l'impplementazione dei test in modo che ne vengano eseguiti uno alla volta" />
   </component>
 </project>
