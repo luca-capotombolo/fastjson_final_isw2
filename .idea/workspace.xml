@@ -4,12 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f8b9ad1d-4dcc-4312-98a8-e7203a9ad0fe" name="Changes" comment="Aggiunto il file TestTypeUtilsParametrizedAll.java che contiene l'impplementazione dei test in modo che ne vengano eseguiti uno alla volta">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/capotombolo/TestOrderedFiledParameterized.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/capotombolo/TestOrderedFieldParameterized.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/capotombolo/TestTypeUtilsParameterized.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/capotombolo/TestTypeUtilsParametrizedAll.java" beforeDir="false" />
+    <list default="true" id="f8b9ad1d-4dcc-4312-98a8-e7203a9ad0fe" name="Changes" comment="Eliminato i vecchi file java 2">
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/capotombolo/TestOrderedFieldParameterized.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/capotombolo/TestTypeUtilsParameterized.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -229,7 +226,21 @@
       <option name="project" value="LOCAL" />
       <updated>1651598504866</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Eliminato i vecchi file java">
+      <created>1652975939025</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1652975939025</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Eliminato i vecchi file java 2">
+      <created>1652975986344</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1652975986344</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -255,6 +266,8 @@
     <MESSAGE value="Modificato su sonar cloud automatic analysis" />
     <MESSAGE value="Implementato i test sia per l'esecuzione di tutti i test sia per un test alla volta" />
     <MESSAGE value="Aggiunto il file TestTypeUtilsParametrizedAll.java che contiene l'impplementazione dei test in modo che ne vengano eseguiti uno alla volta" />
-    <option name="LAST_COMMIT_MESSAGE" value="Aggiunto il file TestTypeUtilsParametrizedAll.java che contiene l'impplementazione dei test in modo che ne vengano eseguiti uno alla volta" />
+    <MESSAGE value="Eliminato i vecchi file java" />
+    <MESSAGE value="Eliminato i vecchi file java 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="Eliminato i vecchi file java 2" />
   </component>
 </project>
