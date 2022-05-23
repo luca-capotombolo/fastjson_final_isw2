@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f8b9ad1d-4dcc-4312-98a8-e7203a9ad0fe" name="Changes" comment="Aggiunti i due file nuovi di test" />
+    <list default="true" id="f8b9ad1d-4dcc-4312-98a8-e7203a9ad0fe" name="Changes" comment="Aggiunti i due file nuovi di test">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/capotombolo/TestOrderedFieldParameterized.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/capotombolo/TestOrderedFieldParameterized.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/capotombolo/TestTypeUtilsParameterized.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/capotombolo/TestTypeUtilsParameterized.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -50,22 +54,7 @@
       <recent name="C:\Users\lucac\MyJava\myfastjson_isw2_final\src\test\java\org\capotombolo" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.TestOrderedFieldParameterized">
-    <configuration name="TestOrderedFieldParameterized" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="myfastjson_isw2_final" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.capotombolo.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.capotombolo" />
-      <option name="MAIN_CLASS_NAME" value="org.capotombolo.TestOrderedFieldParameterized" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.TestTypeUtilsParameterized">
     <configuration name="TestOrderedFieldParameterized.test_ordered_field" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="myfastjson_isw2_final" />
       <extension name="coverage">
@@ -97,7 +86,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestTypeUtilsParameterized.test_3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TestTypeUtilsParameterized.test_2Gson" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="myfastjson_isw2_final" />
       <extension name="coverage">
         <pattern>
@@ -107,13 +96,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="org.capotombolo" />
       <option name="MAIN_CLASS_NAME" value="org.capotombolo.TestTypeUtilsParameterized" />
-      <option name="METHOD_NAME" value="test_3" />
+      <option name="METHOD_NAME" value="test_2Gson" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestTypeUtilsParameterized.test_put_ID" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TestTypeUtilsParameterized.test_cast_ab_error_cast_to_sqlDate_error" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="myfastjson_isw2_final" />
       <extension name="coverage">
         <pattern>
@@ -123,7 +112,23 @@
       </extension>
       <option name="PACKAGE_NAME" value="org.capotombolo" />
       <option name="MAIN_CLASS_NAME" value="org.capotombolo.TestTypeUtilsParameterized" />
-      <option name="METHOD_NAME" value="test_put_ID" />
+      <option name="METHOD_NAME" value="test_cast_ab_error_cast_to_sqlDate_error" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestTypeUtilsParameterized.test_error" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="myfastjson_isw2_final" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.capotombolo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.capotombolo" />
+      <option name="MAIN_CLASS_NAME" value="org.capotombolo.TestTypeUtilsParameterized" />
+      <option name="METHOD_NAME" value="test_error" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -131,11 +136,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.TestOrderedFieldParameterized" />
         <item itemvalue="JUnit.TestTypeUtilsParameterized" />
+        <item itemvalue="JUnit.TestTypeUtilsParameterized.test_cast_ab_error_cast_to_sqlDate_error" />
+        <item itemvalue="JUnit.TestTypeUtilsParameterized.test_error" />
+        <item itemvalue="JUnit.TestTypeUtilsParameterized.test_2Gson" />
         <item itemvalue="JUnit.TestOrderedFieldParameterized.test_ordered_field" />
-        <item itemvalue="JUnit.TestTypeUtilsParameterized.test_3" />
-        <item itemvalue="JUnit.TestTypeUtilsParameterized.test_put_ID" />
       </list>
     </recent_temporary>
   </component>

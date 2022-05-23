@@ -8,7 +8,6 @@ import com.alibaba.fastjson.util.TypeUtils;
 import com.google.gson.Gson;
 import org.junit.Assert;
 import org.junit.Test;
-
 import java.lang.reflect.Method;
 import java.lang.reflect.Type;
 import java.math.BigDecimal;
@@ -18,14 +17,13 @@ import java.util.*;
 
 public class TestTypeUtilsParameterized {
 
-    //{28, 34}
     private  Object objectInput1Test_0_1;
     private Object objectInput2Test_0_1;
     private Object objectExpectedTest_0_1;
 
 
-    //{39}
-    private User objectInputTest2;
+    private JSONObject objectInput1Test2;
+    private Class<User> objectInput2Test2;
     private long objectExpected1Test2;
     private String objectExpected2Test2;
 
@@ -56,7 +54,8 @@ public class TestTypeUtilsParameterized {
     private Object objectInput2TestError2;
 
 
-    private User objectInputTest3;
+    private JSONObject object1InputTest3;
+    private Class<User> object2InputTest3;
     private Object objectExpected1Test3;
     private Object objectExpected2Test3;
 
@@ -64,8 +63,6 @@ public class TestTypeUtilsParameterized {
     private Object objectExpectedCastToSqlDate;
     private Object objectInputCastToSqlDate;
 
-    private Object objectExpectedCastToTimestampNull2;
-    private Object objectInputCastToTimestampNull2;
 
     private Object objectInputCastToTimestamp;
     private Object objectExpectedCastToTimestamp;
@@ -102,60 +99,61 @@ public class TestTypeUtilsParameterized {
         //------------------------------------------------------------------------------------------------------------------------------------
         /*test_cast_Integer(), test_cast_Integer_2(), test_cast_to_long(), test_cast_to_Long(), test_cast_to_short()
         test_cast_to_Short(), test_cast_to_byte(), test_cast_to_Byte(), test_cast_to_BigInteger(), test_cast_to_BigDecimal()
-        test_cast_to_boolean(), test_cast_to_Boolean() test_cast_null(), test_cast_to_String(), test_cast_to_Date(), test_cast_to_SqlDate(),
+        test_cast_to_boolean(), test_cast_to_Boolean() test_cast_to_String(), test_cast_null(), test_cast_to_Date(), test_cast_to_SqlDate(),
         test_cast_to_SqlDate_string(), test_cast_to_SqlDate_null(), test_cast_to_SqlDate_util_Date(), test_cast_to_SqlDate_sql_Date,
         test_cast_to_Timestamp(), test_cast_to_Timestamp_string, test_cast_to_Timestamp_number(), test_cast_to_Timestamp_null(), test_cast_to_Timestamp_util_Date()
         test_cast_to_Timestamp_sql_Date(), test_cast_ab(), test_cast_ab_1()*/
-        //configureTestPutID(new JSONObject(), "id", 1,int.class, new Integer(1));
-        //configureTestPut1ID(new JSONObject(), "id", 1,Integer.class, new Integer(1));
-        //configureTestPut1ID(new JSONObject(), "id", 1,long.class, 1L);
-        //configureTestPut1ID(new JSONObject(), "id", 1,Long.class, 1L);
-        //configureTestPut1ID(new JSONObject(), "id", 1,short.class, new Short((short) 1));
-        //configureTestPut1ID(new JSONObject(), "id", 1,Short.class, new Short((short) 1));
-        //configureTestPut1ID(new JSONObject(), "id", 1,byte.class, new Byte((byte) 1));
-        //configureTestPut1ID(new JSONObject(), "id", 1,Byte.class, new Byte((byte) 1));
-        //configureTestPut1ID(new JSONObject(), "id", 1,BigInteger.class, new BigInteger( "1"));
-        //configureTestPut1ID(new JSONObject(), "id", 1,BigDecimal.class, new BigDecimal( "1"));
-        //configureTestPut1ID(new JSONObject(), "id", 1,boolean.class, Boolean.TRUE);
-        //configureTestPut1ID(new JSONObject(), "id", 1,Boolean.class, Boolean.TRUE);
-        //configureTestPut1ID(new JSONObject(), "id", 1,String.class, "1");
-        //configureTestPut1ID(new JSONObject(), "id", null, Boolean.class, null);
-        //configureTestPutID(new JSONObject(), "date", millis, Date.class, new Date(millis));
-        //configureTestPutID(new JSONObject(), "date", millis, java.sql.Date.class, new java.sql.Date(millis));
-        //configureTestPutID(new JSONObject(), "date", Long.toString(millis), java.sql.Date.class, new java.sql.Date(millis));
-        //configureTestPutID(new JSONObject(), "date", null, java.sql.Date.class, null);
-        //configureTestPutID(new JSONObject(), "date", new java.sql.Date(millis), java.sql.Date.class, new java.sql.Date(millis));
-        //configureTestPutID(new JSONObject(), "date", new java.sql.Date(millis), java.sql.Date.class, new java.sql.Date(millis));
-        //configureTestPutID(new JSONObject(), "date", millis, java.sql.Timestamp.class, new java.sql.Timestamp(millis));
-        //configureTestPutID(new JSONObject(), "date", Long.toString(millis), java.sql.Timestamp.class, new java.sql.Timestamp(millis) );
-        //configureTestPutID(new JSONObject(), "date",new BigDecimal(Long.toString(millis)), java.sql.Timestamp.class, new java.sql.Timestamp(millis));
-        //configureTestPutID(new JSONObject(), "date", null, java.sql.Timestamp.class, null);
-        //configureTestPutID(new JSONObject(), "date", new Date((millis)), java.sql.Timestamp.class, new java.sql.Timestamp(millis));
-        //riga 267
-        //configureTestPutID(new JSONObject(), "date",new Date(millis), java.sql.Timestamp.class, new java.sql.Timestamp(millis));
-        //configureTestPutID(new JSONObject(), "date", new java.sql.Date(millis),java.sql.Timestamp.class, new java.sql.Timestamp(millis));
+
+        //configureTestPutID("id", 1,int.class, new Integer(1));
+        //configureTestPutID("id", 1,Integer.class, new Integer(1));
+        //configureTestPutID("id", 1,long.class, 1L);
+        //configureTestPutID("id", 1,Long.class, 1L);
+        //configureTestPutID("id", 1,short.class, new Short((short) 1));
+        //configureTestPutID("id", 1,Short.class, new Short((short) 1));
+        //configureTestPutID( "id", 1,byte.class, new Byte((byte) 1));
+        //configureTestPutID( "id", 1,Byte.class, new Byte((byte) 1));
+        //configureTestPutID("id", 1,BigInteger.class, new BigInteger( "1"));
+        //configureTestPutID("id", 1,BigDecimal.class, new BigDecimal( "1"));
+        //configureTestPutID("id", 1,boolean.class, Boolean.TRUE);
+        //configureTestPutID("id", 1,Boolean.class, Boolean.TRUE);
+        //configureTestPutID("id", 1,String.class, "1");
+        //configureTestPutID("id", null, Boolean.class, null);
+        //configureTestPutID( "date", millis, Date.class, new Date(millis));
+        //configureTestPutID("date", millis, java.sql.Date.class, new java.sql.Date(millis));
+        //configureTestPutID("date", Long.toString(millis), java.sql.Date.class, new java.sql.Date(millis));
+        //configureTestPutID("date", null, java.sql.Date.class, null);
+        //configureTestPutID("date", new java.sql.Date(millis), java.sql.Date.class, new java.sql.Date(millis));
+        //configureTestPutID("date", new Date(millis), java.sql.Date.class, new java.sql.Date(millis));
+        //configureTestPutID("date", new java.sql.Date(millis), java.sql.Date.class, new java.sql.Date(millis));
+        //configureTestPutID("date", millis, java.sql.Timestamp.class, new java.sql.Timestamp(millis));
+        //configureTestPutID("date", Long.toString(millis), java.sql.Timestamp.class, new java.sql.Timestamp(millis) );
+        //configureTestPutID( "date",new BigDecimal(Long.toString(millis)), java.sql.Timestamp.class, new java.sql.Timestamp(millis));
+        //configureTestPutID("date", null, java.sql.Timestamp.class, null);
+        //configureTestPutID("date", new Date((millis)), java.sql.Timestamp.class, new java.sql.Timestamp(millis));
+        //configureTestPutID("date", new java.sql.Date(millis),java.sql.Timestamp.class, new java.sql.Timestamp(millis));
         //test_cast_ab()
-        //configureTestPutID(new JSONObject(), "value", b = new B(), A.class,b);
+        //configureTestPutID("value", b = new B(), A.class,b);
         //test_cast_ab_1()
-        configureTestPutID(new JSONObject(), "value", b = new B(), IA.class, b);
+        configureTestPutID("value", b = new B(), IA.class, b);
         //------------------------------------------------------------------------------------------------------------------------------------
         //test_cast_to_SqlDate_sql_Date2()
-        configureToSqlDate183(millis);
+        configureToSqlDate183();
         //------------------------------------------------------------------------------------------------------------------------------------
         //It runs test_put_ID() ATTENZIONE!! TOGLI TUTTI I configureTestPutID
-        //196 test_cast_to_SqlDate_calendar(), test_cast_to_Timestamp_calendar()
-        //configureToSqlDateCalendar(new JSONObject(), "date", Calendar.getInstance(), java.sql.Date.class, new java.sql.Date(millis));
-        //configureToSqlDateCalendar(new JSONObject(), "date", Calendar.getInstance(), java.sql.Timestamp.class, new java.sql.Timestamp(millis));
+        //test_cast_to_SqlDate_calendar(), test_cast_to_Timestamp_calendar()
+        //configureToSqlDateCalendar("date", java.sql.Date.class, new java.sql.Date(millis));
+        //configureToSqlDateCalendar("date", java.sql.Timestamp.class, new java.sql.Timestamp(millis));
         //------------------------------------------------------------------------------------------------------------------------------------
         //test_cast_to_SqlDate_null2()
         configureToSqlDateNull2(null, null);
         //------------------------------------------------------------------------------------------------------------------------------------
         //test_cast_to_Timestamp_null2()
-        configureToTimestampNull2(null, null);
+        //it runs with configureCastToTimestampSqlTimestamp() and configureCastToTimestampSqlTimestamp()
+        //configureToTimestampNull2(null, null);
         //------------------------------------------------------------------------------------------------------------------------------------
-        //test_cast_ab_error(), test_cast_to_SqlDate_error()    ????????
-        //configureABError_cast_to_SqlDate_error(new JSONObject(), "value", new A(), B.class);
-        configureABError_cast_to_SqlDate_error(new JSONObject(), "date", 0, java.sql.Date.class);
+        //test_cast_ab_error(), test_cast_to_SqlDate_error()
+        configureABError_cast_to_SqlDate_error("value", new A(), B.class);
+        //configureABError_cast_to_SqlDate_error("date", 0, java.sql.Date.class);
         //------------------------------------------------------------------------------------------------------------------------------------
         //test_error()
         configureError(new JSONObject(), "id", 1, C.class, ParserConfig.getGlobalInstance());
@@ -167,7 +165,7 @@ public class TestTypeUtilsParameterized {
         configureTest3(new JSONObject(), "id", 1, "name", "panlei", User.class);
         //------------------------------------------------------------------------------------------------------------------------------------
         //test_cast_to_Timestamp_1970_01_01_00_00_00()
-        //it runs with configureCastToTimestampSqlTimestamp()
+        //it runs with configureCastToTimestampSqlTimestamp() and configureToTimestampNull2
         //configureTimestamp1970("Asia/Shanghai", "1970-01-01 08:00:00", new Timestamp(0));
         //------------------------------------------------------------------------------------------------------------------------------------
         //test_cast_to_BigDecimal_same()
@@ -180,13 +178,13 @@ public class TestTypeUtilsParameterized {
         configureCastToTimestampSqlTimestamp();
         // ------------------------------------------------------------------------------------------------------------------------------------
         //test_cast_to_Timestamp_not_error()
-        configureTimestampNotError(new JSONObject(), "date", -1, java.sql.Timestamp.class, new Timestamp(-1L));
+        configureTimestampNotError("date", -1, java.sql.Timestamp.class, new Timestamp(-1L));
         //-------------------------------------------------------------------------------------------------------------------------------------
     }
 
-    private void configureTimestampNotError(JSONObject jsonObject, String idKey, Object idValue, Class<?> classObject, Object objectExpectedTimestampNotError) {
-        jsonObject.put(idKey, idValue);
-        this.jsonObjectTimestampNotError = jsonObject;
+    private void configureTimestampNotError(String idKey, Object idValue, Class<?> classObject, Object objectExpectedTimestampNotError) {
+        this.jsonObjectTimestampNotError = new JSONObject();
+        this.jsonObjectTimestampNotError.put(idKey, idValue);
         this.objectInput11TimestampNotError = idKey;
         this.objectInput12TimestampNotError = classObject;
         this.objectInput21TimestampNotError = idKey;
@@ -238,19 +236,14 @@ public class TestTypeUtilsParameterized {
         this.objectExpectedCastToTimestamp = date;
     }
 
+    private void configureToTimestampNull2(Object objectExpectedCastToTimestampNull2, Object objectInputCastToTimestampNull2) {
+        this.objectExpectedCastToTimestamp = objectExpectedCastToTimestampNull2;
+        this.objectInputCastToTimestamp = objectInputCastToTimestampNull2;
+    }
+
     @Test
     public void test_cast_to_Timestamp(){
         Assert.assertEquals(this.objectExpectedCastToTimestamp, TypeUtils.castToTimestamp(this.objectInputCastToTimestamp));
-    }
-
-    private void configureToTimestampNull2(Object objectExpectedCastToTimestampNull2, Object objectInputCastToTimestampNull2) {
-        this.objectExpectedCastToTimestampNull2 = objectExpectedCastToTimestampNull2;
-        this.objectInputCastToTimestampNull2 = objectInputCastToTimestampNull2;
-    }
-
-    @Test
-    public void test_cast_to_Timestamp_null2(){
-        Assert.assertEquals(this.objectExpectedCastToTimestampNull2, TypeUtils.castToSqlDate(this.objectInputCastToTimestampNull2));
     }
 
     private void configureToSqlDateNull2(Object objectExpectedCastToSqlDate, Object objectInputCastToSqlDate) {
@@ -267,17 +260,19 @@ public class TestTypeUtilsParameterized {
     private void configureTest3(JSONObject jsonObject, String idKey, Object idValue, String nameKey, Object nameValue, Class<User> classObject){
         jsonObject.put(idKey, idValue);
         jsonObject.put(nameKey, nameValue);
-        this.objectInputTest3 = JSON.toJavaObject(jsonObject, classObject);
+        this.object1InputTest3 = jsonObject;
+        this.object2InputTest3 = classObject;
         Gson gson = new Gson();
-        User user = gson.fromJson("{'id':" + idValue  + ",'name':"+nameValue+"}", User.class);
+        User user = gson.fromJson("{'"+idKey+"':" + idValue  + ",'"+nameKey+"':"+nameValue+"}", classObject);
         this.objectExpected1Test3 = user.id;
         this.objectExpected2Test3 = user.name;
     }
 
     @Test
     public void test_3(){
-        Assert.assertEquals(this.objectExpected1Test3, this.objectInputTest3.getId());
-        Assert.assertEquals(this.objectExpected2Test3, this.objectInputTest3.getName());
+        User user = JSON.toJavaObject(this.object1InputTest3, this.object2InputTest3);
+        Assert.assertEquals(this.objectExpected1Test3, user.getId());
+        Assert.assertEquals(this.objectExpected2Test3, user.getName());
     }
 
     private void configureError2(JSONObject jsonObject, String idKey, Object idValue, String input, Class<List> classObject, ParserConfig parserConfig) throws NoSuchMethodException {
@@ -317,15 +312,15 @@ public class TestTypeUtilsParameterized {
         Assert.assertNotNull(error);
     }
 
-    private void configureABError_cast_to_SqlDate_error(JSONObject jsonObject, String idKey, Object idValue, Class<?> classObject){
-        jsonObject.put(idKey, idValue);
-        this.jsonObjectABError_cast_to_SqlDate_error = jsonObject;
+    private void configureABError_cast_to_SqlDate_error(String idKey, Object idValue, Class<?> classObject){
+        this.jsonObjectABError_cast_to_SqlDate_error = new JSONObject();
+        this.jsonObjectABError_cast_to_SqlDate_error.put(idKey, idValue);
         this.objectInput1TestABError_cast_to_SqlDate_error = idKey;
         this.objectInput2TestABError_cast_to_SqlDate_error = classObject;
     }
 
     @Test
-    public void test_cast_ab_error(){
+    public void test_cast_ab_error_cast_to_sqlDate_error(){
         JSONException error = null;
         try {
             this.jsonObjectABError_cast_to_SqlDate_error.getObject((String) this.objectInput1TestABError_cast_to_SqlDate_error, (Class<?>) this.objectInput2TestABError_cast_to_SqlDate_error);
@@ -335,17 +330,18 @@ public class TestTypeUtilsParameterized {
         Assert.assertNotNull(error);
     }
 
-    private void configureToSqlDateCalendar(JSONObject jsonObject, String idKey, Calendar calendar, Class<?> classObject, Object objectExpectedTestPutID) {
+    private void configureToSqlDateCalendar(String idKey, Class<?> classObject, Object objectExpectedTestPutID) {
+        Calendar calendar = Calendar.getInstance();
         calendar.setTimeInMillis(millis);
-        jsonObject.put(idKey, calendar);
-        this.jsonObjectTestPutID = jsonObject;
+        this.jsonObjectTestPutID = new JSONObject();
+        this.jsonObjectTestPutID.put(idKey, calendar);
         this.objectInput1TestPutID = idKey;
         this.objectInput2TestPutID = classObject;
         this.objectExpectedTestPutID = objectExpectedTestPutID;
 
     }
 
-    private void configureToSqlDate183(Long millis){
+    private void configureToSqlDate183(){
         java.sql.Date date = new java.sql.Date(millis);
         this.objectInputSqlDate183 = date;
         this.objectExpectedSqlDate183 = date;
@@ -356,11 +352,11 @@ public class TestTypeUtilsParameterized {
         Assert.assertEquals(this.objectExpectedSqlDate183, TypeUtils.castToSqlDate(this.objectInputSqlDate183));
     }
 
-    private void configureTestPutID(JSONObject jsonObject, String idKey, Object idValue, Class<?> classObject, Object objectExpectedTestPutID) {
+    private void configureTestPutID(String idKey, Object idValue, Class<?> classObject, Object objectExpectedTestPutID) {
+        this.jsonObjectTestPutID = new JSONObject();
         this.objectInput1TestPutID = idKey;
         this.objectInput2TestPutID = classObject;
-        jsonObject.put(idKey, idValue);
-        this.jsonObjectTestPutID = jsonObject;
+        this.jsonObjectTestPutID.put(idKey, idValue);
         this.objectExpectedTestPutID = objectExpectedTestPutID;
     }
 
@@ -372,17 +368,19 @@ public class TestTypeUtilsParameterized {
     private void configureTest2Gson(JSONObject jsonObject, String idKey, int idValue, String nameKey, String nameValue, Class<User> userClass) {
         jsonObject.put(idKey, idValue);
         jsonObject.put(nameKey, nameValue);
-        this.objectInputTest2 = TypeUtils.castToJavaBean(jsonObject, userClass);
+        this.objectInput1Test2 = jsonObject;
+        this.objectInput2Test2 = userClass;
         Gson gson = new Gson();
-        User user = gson.fromJson("{'id':" + idValue  + ",'name':"+nameValue+"}", User.class);
+        User user = gson.fromJson("{'"+idKey+"':" +idValue+ ",'"+nameKey+"':"+nameValue+"}", userClass);
         this.objectExpected1Test2 = user.id;
         this.objectExpected2Test2 = user.name;
     }
 
     @Test
     public void test_2Gson(){
-        Assert.assertEquals(this.objectExpected1Test2, this.objectInputTest2.getId());
-        Assert.assertEquals(this.objectExpected2Test2, this.objectInputTest2.getName());
+        User user = TypeUtils.castToJavaBean(this.objectInput1Test2, this.objectInput2Test2);
+        Assert.assertEquals(this.objectExpected1Test2, user.getId());
+        Assert.assertEquals(this.objectExpected2Test2, user.getName());
     }
 
     private void configureTest_0_1(Object object, Class<?> objectClass){
