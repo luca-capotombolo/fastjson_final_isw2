@@ -13,7 +13,7 @@ public class TestOrderedFieldParameterized {
 
 
     public TestOrderedFieldParameterized()    {
-        configure("{\"id\":1001}", Model.class, Feature.OrderedField, 1001);
+        configure("{\"id\":1005}", Model.class, Feature.OrderedField, 1005);
     }
 
     private void configure(String inputText, Class<Model> inputClass, Feature inputFeature, int expectedValue) {

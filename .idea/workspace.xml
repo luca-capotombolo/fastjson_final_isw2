@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f8b9ad1d-4dcc-4312-98a8-e7203a9ad0fe" name="Changes" comment="Aggiunti i due file nuovi di test">
+    <list default="true" id="f8b9ad1d-4dcc-4312-98a8-e7203a9ad0fe" name="Changes" comment="Prova Workflow sonarcloud">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/capotombolo/TestOrderedFieldParameterized.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/capotombolo/TestOrderedFieldParameterized.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/capotombolo/TestTypeUtilsParameterized.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/capotombolo/TestTypeUtilsParameterized.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -251,7 +249,21 @@
       <option name="project" value="LOCAL" />
       <updated>1652976038678</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Completata l'implementazione dei test di fastjson">
+      <created>1653337098843</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1653337098843</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Prova Workflow sonarcloud">
+      <created>1653339068391</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1653339068391</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -280,6 +292,8 @@
     <MESSAGE value="Eliminato i vecchi file java" />
     <MESSAGE value="Eliminato i vecchi file java 2" />
     <MESSAGE value="Aggiunti i due file nuovi di test" />
-    <option name="LAST_COMMIT_MESSAGE" value="Aggiunti i due file nuovi di test" />
+    <MESSAGE value="Completata l'implementazione dei test di fastjson" />
+    <MESSAGE value="Prova Workflow sonarcloud" />
+    <option name="LAST_COMMIT_MESSAGE" value="Prova Workflow sonarcloud" />
   </component>
 </project>
