@@ -1,4 +1,4 @@
-name: Maven and SonarCloud
+name: Build
 on:
   push:
     branches:
@@ -7,7 +7,7 @@ on:
     types: [opened, synchronize, reopened]
 jobs:
   build:
-    name: Maven and SonarCloud
+    name: Build
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
