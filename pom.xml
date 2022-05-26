@@ -218,19 +218,19 @@
                   <executable>java</executable>
                   <arguments>
                     <argument>-jar</argument>
-                    <argument>${project.basedir}\jar\jacoco\jacococli.jar</argument>
+                    <argument>${project.basedir}/jar/jacoco/jacococli.jar</argument>
                     <argument>report</argument>
-                    <argument>${project.basedir}\target\jacoco.exec</argument>
+                    <argument>${project.basedir}/target/jacoco.exec</argument>
                     <argument>--classfiles</argument>
-                    <argument>${project.basedir}\jar\fastjson-1.2.79_isw2.jar</argument>
+                    <argument>${project.basedir}/jar/fastjson-1.2.79_isw2.jar</argument>
                     <argument>--sourcefiles</argument>
-                    <argument>${project.basedir}\src\test\org\capotombolo</argument>
+                    <argument>${project.basedir}/src/test/org/capotombolo</argument>
                     <argument>--html</argument>
-                    <argument>${project.basedir}\target</argument>
+                    <argument>${project.basedir}/target</argument>
                     <argument>--xml</argument>
-                    <argument>${project.basedir}\target\jacoco.xml</argument>
+                    <argument>${project.basedir}/target/jacoco.xml</argument>
                     <argument>--csv</argument>
-                    <argument>${project.basedir}\target\jacoco.csv</argument>
+                    <argument>${project.basedir}/target/jacoco.csv</argument>
                   </arguments>
                 </configuration>
               </execution>
