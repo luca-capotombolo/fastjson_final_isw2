@@ -168,17 +168,16 @@
                   <goal>exec</goal>
                 </goals>
                 <configuration>
-                  <workingDirectory>${project.basedir}</workingDirectory>
                   <executable>java</executable>
                   <arguments>
                     <argument>-jar</argument>
-                    <argument>.\jar\jacoco\jacococli.jar</argument>
+                    <argument>${project.basedir}\jar\jacoco\jacococli.jar</argument>
                     <argument>report</argument>
-                    <argument>.\target\jacoco.exec</argument>
+                    <argument>${project.basedir}\target\jacoco.exec</argument>
                     <argument>--classfiles</argument>
-                    <argument>.\jar\fastjson-1.2.79_isw2.jar</argument>
+                    <argument>${project.basedir}\jar\fastjson-1.2.79_isw2.jar</argument>
                     <argument>--sourcefiles</argument>
-                    <argument>.\src\test\java</argument>
+                    <argument>${project.basedir}\src\test\java</argument>
                     <argument>--html</argument>
                     <argument>target</argument>
                     <argument>--xml</argument>
@@ -215,17 +214,16 @@
                   <goal>exec</goal>
                 </goals>
                 <configuration>
-                  <workingDirectory>${project.basedir}</workingDirectory>
                   <executable>java</executable>
                   <arguments>
                     <argument>-jar</argument>
-                    <argument>./jar/jacoco/jacococli.jar</argument>
+                    <argument>${project.basedir}/jar/jacoco/jacococli.jar</argument>
                     <argument>report</argument>
-                    <argument>./target/jacoco.exec</argument>
+                    <argument>${project.basedir}/target/jacoco.exec</argument>
                     <argument>--classfiles</argument>
-                    <argument>./jar/fastjson-1.2.79_isw2.jar</argument>
+                    <argument>${project.basedir}/jar/fastjson-1.2.79_isw2.jar</argument>
                     <argument>--sourcefiles</argument>
-                    <argument>./src/test/java</argument>
+                    <argument>${project.basedir}/src/test/java</argument>
                     <argument>--html</argument>
                     <argument>target</argument>
                     <argument>--xml</argument>
