@@ -32,9 +32,6 @@
         <plugin>
           <artifactId>maven-compiler-plugin</artifactId>
           <version>3.8.1</version>
-          <configuration>
-            <release>11</release>
-          </configuration>
         </plugin>
         <plugin>
           <artifactId>maven-surefire-plugin</artifactId>
@@ -82,10 +79,10 @@
       <version>2.8.9</version>
     </dependency>
   </dependencies>
-  
+
   <profiles>
     <profile>
-      <id>JaCoCo-coverage</id>
+      <id>coverage</id>
       <activation>
         <activeByDefault>false</activeByDefault>
       </activation>
@@ -179,7 +176,7 @@
                     <argument>report</argument>
                     <argument>.\target\jacoco.exec</argument>
                     <argument>--classfiles</argument>
-                    <argument>.\jar\fastjson-1.2.79.jar</argument>
+                    <argument>.\jar\fastjson-1.2.79_isw2.jar</argument>
                     <argument>--sourcefiles</argument>
                     <argument>.\src\test\java</argument>
                     <argument>--html</argument>
@@ -226,7 +223,7 @@
                     <argument>report</argument>
                     <argument>./target/jacoco.exec</argument>
                     <argument>--classfiles</argument>
-                    <argument>./jar/fastjson-1.2.79.jar</argument>
+                    <argument>./jar/fastjson-1.2.79_isw2.jar</argument>
                     <argument>--sourcefiles</argument>
                     <argument>./src/test/java</argument>
                     <argument>--html</argument>
