@@ -24,6 +24,11 @@ public class TestTypeUtilsParameterized {
 
     private JSONObject objectInput1Test2;
     private Class<User> objectInput2Test2;
+    private String objectInput3Test2;
+    private String objectInput4Test2;
+    private int objectInput5Test2;
+    private String objectInput6Test2;
+
     private long objectExpected1Test2;
     private String objectExpected2Test2;
 
@@ -370,6 +375,11 @@ public class TestTypeUtilsParameterized {
         jsonObject.put(nameKey, nameValue);
         this.objectInput1Test2 = jsonObject;
         this.objectInput2Test2 = userClass;
+        this.objectInput3Test2 = idKey;
+        this.objectInput4Test2 = nameKey;
+        this.objectInput5Test2 = idValue;
+        this.objectInput6Test2 = nameValue;
+
         Gson gson = new Gson();
         User user = gson.fromJson("{'"+idKey+"':" +idValue+ ",'"+nameKey+"':"+nameValue+"}", userClass);
         this.objectExpected1Test2 = user.id;
@@ -378,6 +388,10 @@ public class TestTypeUtilsParameterized {
 
     @Test
     public void test_2Gson(){
+        Gson gson = new Gson();
+        User userGson = gson.fromJson("{'"+this.objectInput3Test2+"':" +this.objectInput5Test2+ ",'"+this.objectInput4Test2+"':"+this.objectInput6Test2+"}", this.objectInput2Test2);
+        this.objectExpected1Test2 = userGson.id;
+        this.objectExpected2Test2 = userGson.name;
         User user = TypeUtils.castToJavaBean(this.objectInput1Test2, this.objectInput2Test2);
         Assert.assertEquals(this.objectExpected1Test2, user.getId());
         Assert.assertEquals(this.objectExpected2Test2, user.getName());
