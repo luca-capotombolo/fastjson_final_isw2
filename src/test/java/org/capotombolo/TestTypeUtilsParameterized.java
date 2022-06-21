@@ -21,7 +21,6 @@ public class TestTypeUtilsParameterized {
     private Object objectInput2Test_0_1;
     private Object objectExpectedTest_0_1;
 
-
     private JSONObject objectInput1Test2;
     private Class<User> objectInput2Test2;
     private String objectInput3Test2;
@@ -32,54 +31,47 @@ public class TestTypeUtilsParameterized {
     private long objectExpected1Test2;
     private String objectExpected2Test2;
 
-
     private JSONObject jsonObjectTestPutID;
     private Object objectInput1TestPutID;
     private Object objectInput2TestPutID;
     private Object objectExpectedTestPutID;
 
-
     private Object objectInputSqlDate183;
     private Object objectExpectedSqlDate183;
     private final long millis;
-
 
     private JSONObject jsonObjectABError_cast_to_SqlDate_error;
     private Object objectInput1TestABError_cast_to_SqlDate_error;
     private Object objectInput2TestABError_cast_to_SqlDate_error;
 
-
     private JSONObject jsonObjectError;
     private ParserConfig objectInput1TestError;
     private Class<C> objectInput2TestError;
-
 
     private JSONObject jsonObjectError2;
     private Type objectInput1TestError2;
     private Object objectInput2TestError2;
 
-
     private JSONObject object1InputTest3;
     private Class<User> object2InputTest3;
+    private String object3InputTest3;
+    private Object object4InputTest3;
+    private String object5InputTest3;
+    private Object object6InputTest3;
     private Object objectExpected1Test3;
     private Object objectExpected2Test3;
-
 
     private Object objectExpectedCastToSqlDate;
     private Object objectInputCastToSqlDate;
 
-
     private Object objectInputCastToTimestamp;
     private Object objectExpectedCastToTimestamp;
-
 
     private Object objectExpectedCastToBigDecimal;
     private Object objectInputCastToBigDecimal;
 
-
     private Object objectExpectedCastToBigInteger;
     private Object objectInputCastToBigInteger;
-
 
     private JSONObject jsonObjectTimestampNotError;
     private String objectInput11TimestampNotError;
@@ -267,14 +259,18 @@ public class TestTypeUtilsParameterized {
         jsonObject.put(nameKey, nameValue);
         this.object1InputTest3 = jsonObject;
         this.object2InputTest3 = classObject;
-        Gson gson = new Gson();
-        User user = gson.fromJson("{'"+idKey+"':" + idValue  + ",'"+nameKey+"':"+nameValue+"}", classObject);
-        this.objectExpected1Test3 = user.id;
-        this.objectExpected2Test3 = user.name;
+        this.object3InputTest3 = idKey;
+        this.object4InputTest3 = idValue;
+        this.object5InputTest3 = nameKey;
+        this.object6InputTest3 = nameValue;
     }
 
     @Test
     public void test_3(){
+        Gson gson = new Gson();
+        User userGson = gson.fromJson("{'"+this.object3InputTest3+"':" + this.object4InputTest3  + ",'"+this.object5InputTest3+"':"+this.object6InputTest3+"}", this.object2InputTest3);
+        this.objectExpected1Test3 = userGson.id;
+        this.objectExpected2Test3 = userGson.name;
         User user = JSON.toJavaObject(this.object1InputTest3, this.object2InputTest3);
         Assert.assertEquals(this.objectExpected1Test3, user.getId());
         Assert.assertEquals(this.objectExpected2Test3, user.getName());
@@ -379,11 +375,6 @@ public class TestTypeUtilsParameterized {
         this.objectInput4Test2 = nameKey;
         this.objectInput5Test2 = idValue;
         this.objectInput6Test2 = nameValue;
-
-        Gson gson = new Gson();
-        User user = gson.fromJson("{'"+idKey+"':" +idValue+ ",'"+nameKey+"':"+nameValue+"}", userClass);
-        this.objectExpected1Test2 = user.id;
-        this.objectExpected2Test2 = user.name;
     }
 
     @Test

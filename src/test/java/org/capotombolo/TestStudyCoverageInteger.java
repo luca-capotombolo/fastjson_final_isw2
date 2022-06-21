@@ -6,8 +6,6 @@ import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
-
-import java.math.BigDecimal;
 import java.math.BigInteger;
 import java.util.Arrays;
 import java.util.Collection;
@@ -19,7 +17,7 @@ public class TestStudyCoverageInteger {
     private Object objectInputCastToBigInteger;
 
     public TestStudyCoverageInteger(Object param1, boolean param2){
-        this.configureBigIntegerSame(param1, param2);
+        this.configureBigInteger(param1, param2);
     }
 
     @Parameterized.Parameters
@@ -33,13 +31,13 @@ public class TestStudyCoverageInteger {
         });
     }
 
-    private void configureBigIntegerSame(Object input, boolean bool) {
+    private void configureBigInteger(Object input, boolean bool) {
         this.objectExpectedCastToBigInteger = bool;
         this.objectInputCastToBigInteger = input;
     }
 
     @Test
-    public void test_cast_to_BigInteger_same(){
+    public void test_cast_to_BigInteger(){
         if(this.objectInputCastToBigInteger == null || (this.objectInputCastToBigInteger.getClass()!=String.class))
             Assert.assertEquals(this.objectExpectedCastToBigInteger, this.objectInputCastToBigInteger == TypeUtils.castToBigInteger(this.objectInputCastToBigInteger));
         else
